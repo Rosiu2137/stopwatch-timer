@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoper - Minutnik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icon.png" sizes="16x16" type="image/x-icon">
+</head>
+<body>
+    <div class="bodyAnimateElement"></div>
+    <div class="container">
+
+        <div class="nav">
+            <div class="option " id="option1">
+                Stoper
+            </div>
+            <div class="option optionHover" id="option2">
+                Minutnik
+            </div>
+        </div>
+
+        <div class="slider"></div>
+
+        <div class="layout1">
+
+            <h1 id="stopwatchContent">00:00</h1>
+            <button class="start" id="start">START</button>
+            <button class="reset" id="reset">Reset</button>
+
+        </div>
+
+
+        <div class="layout2">
+            <div class="counter">
+                <input class="numberInput" id="hours" value="0" min="0" type="number">
+                <div class="dots">:</div>    
+                <input class="numberInput limit" id="minutes" value="0" min=0 type="number">
+                <div class="dots">:</div>   
+                <input class="numberInput limit" id="seconds" value="0" min=0 type="number">
+            </div>
+
+
+            <div class="timerContent">00:00:00</div>
+            
+            <div class="buttons">
+                <button class="start btn2" id="start2">START</button>
+                <button class="reset btn2" id="reset2">Reset</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
